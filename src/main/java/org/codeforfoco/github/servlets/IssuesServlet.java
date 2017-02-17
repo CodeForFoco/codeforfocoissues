@@ -43,9 +43,9 @@ public class IssuesServlet extends HttpServlet {
         // 2 - email
         // 3 - userComment
 
-        userComment.append("**Name: **").append(userInfo[0]).append(userInfo[1]).append("<br/>");
-        userComment.append("**Email: **").append(userInfo[2]).append("<br/>");
-        userComment.append("**Comment: **").append(userInfo[3]);
+        userComment.append("**Name:** ").append(userInfo[0]).append(userInfo[1]).append("<br/>");
+        userComment.append("**Email:** ").append(userInfo[2]).append("<br/>");
+        userComment.append("**Comment:** ").append(userInfo[3]);
 
         return userComment.toString();
     }
