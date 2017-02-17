@@ -22,9 +22,12 @@ public class IssuesServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String issueTitle = request.getParameter("issueTitle");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        String email = request.getParameter("email");
         String userComment = request.getParameter("userComment");
 
-        issueService.createAnIssue(issueTitle, buildUserComment(userComment));
+        issueService.createAnIssue(issueTitle, buildUserComment(firstName, lastName, email, userComment));
     }
 
     @Override
@@ -34,7 +37,15 @@ public class IssuesServlet extends HttpServlet {
 
     private String buildUserComment(String... userInfo) {
         StringBuilder userComment = new StringBuilder();
-        userComment.append("**").append(userInfo[0]).append("**");
+
+        // 0 - firstName
+        // 1 - lastName
+        // 2 - email
+        // 3 - userComment
+
+        userComment.append("**Name: ").append(userInfo[0]).append(" ").append(userInfo[1]).append("**<br/>");
+        userComment.append("**Email: ").append(userInfo[2]).append("**<br/>");
+        userComment.append("**Comment: ").append(userInfo[3]).append("**");
 
         return userComment.toString();
     }
