@@ -24,11 +24,18 @@ public class IssuesServlet extends HttpServlet {
         String issueTitle = request.getParameter("issueTitle");
         String userComment = request.getParameter("userComment");
 
-        issueService.createAnIssue(issueTitle, userComment);
+        issueService.createAnIssue(issueTitle, buildUserComment(userComment));
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
+    }
+
+    private String buildUserComment(String... userInfo) {
+        StringBuilder userComment = new StringBuilder();
+        userComment.append("**").append(userInfo[0]).append("**");
+
+        return userComment.toString();
     }
 }
