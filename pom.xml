@@ -60,11 +60,13 @@
         <version.jcabi-github>0.29</version.jcabi-github>
 
         <!-- WildFly Swarm -->
-        <version.wildfly.swarm>2017.2.0</version.wildfly.swarm>
+        <version.wildfly.swarm>2017.5.0</version.wildfly.swarm>
 
         <!-- maven-compiler-plugin -->
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
+
+        <version.resteasy-jaxrs>3.1.3.Final</version.resteasy-jaxrs>
     </properties>
 
 
@@ -166,12 +168,31 @@
             <groupId>org.wildfly.swarm</groupId>
             <artifactId>undertow</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>jaxrs</artifactId>
+        </dependency>
 
         <!-- Needed for running tests (you may also use TestNG) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- JAX RS 2.0 -->
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>${version.resteasy-jaxrs}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- EJB 3.2 -->
+        <dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.2_spec</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

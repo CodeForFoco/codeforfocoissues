@@ -37,4 +37,20 @@ public class IssueServiceImpl implements IssueService {
 
         return !issue.exists();
     }
+
+    @Override
+    public String buildUserComment(String... userInfo) {
+        StringBuilder userComment = new StringBuilder();
+
+        // 0 - firstName
+        // 1 - lastName
+        // 2 - email
+        // 3 - userComment
+
+        userComment.append("**Name:** ").append(userInfo[0]).append(" ").append(userInfo[1]).append("<br/>");
+        userComment.append("**Email:** ").append(userInfo[2]).append("<br/>");
+        userComment.append("**Comment:** ").append(userInfo[3]);
+
+        return userComment.toString();
+    }
 }

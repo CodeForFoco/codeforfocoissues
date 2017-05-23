@@ -7,4 +7,5 @@ import java.io.IOException;
  */
 public interface IssueService {
     boolean createAnIssue(String issueTitle, String userComment) throws IOException;
+    String buildUserComment(String... userInfo);
 }
