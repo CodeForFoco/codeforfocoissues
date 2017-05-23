@@ -4,7 +4,7 @@
 
 This small application allows the user to create a new **Issue** remotely.
 
-The following info is required to be stored in the **application.properties** file:
+The following info is required to be stored in the **src/main/webapp/WEB-INF/classes/application.properties** file:
 
 - GitHub account name
 - Repository name
