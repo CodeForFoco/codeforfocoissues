@@ -14,7 +14,7 @@ There are two ways to create a new **Issue**
 
 1. Using a "conventional" URL and query parameters as follows:
 
-   http://\[hostname\]:\[:8080\]/createIssue?issueTitle=ATitle&firstName=AFirstName&lastName=ALastName&email=AnEmail&userComment=AComment
+   http://\[hostname\]\[:8080\]/createIssue?issueTitle=ATitle&firstName=AFirstName&lastName=ALastName&email=AnEmail&userComment=AComment
 
 2. Sending a **POST** request to the following REST Endpoint:
 
