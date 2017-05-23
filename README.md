@@ -76,3 +76,19 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 ```
+## Bugs / Feedback / Suggestions
+
+We encourage you to [open up an issue][newissue] if you have any feedback, suggestions or bugs.
+
+## License
+
+MIT, see [LICENSE](/LICENSE) for full license.
+
+[slack]: https://codeforfoco.slack.com/
+[slackinvite]: https://codeforfocoslack.herokuapp.com
+[fork]: https://help.github.com/articles/fork-a-repo/
+[forkthisrepo]: https://github.com/CodeForFoco/TODOUPDATEURL#fork-destination-box
+[contributing]: https://github.com/CodeForFoco/org/blob/master/CONTRIBUTING.md
+[githubissue]: https://github.com/CodeForFoco/TODOUPDATEURL/issues
+[newissue]: https://github.com/CodeForFoco/TODOUPDATEURL/issues/new
+[pullrequest]: https://github.com/CodeForFoco/TODOUPDATEURL/pulls
