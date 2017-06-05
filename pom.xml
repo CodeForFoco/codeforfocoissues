@@ -60,7 +60,7 @@
         <version.jcabi-github>0.29</version.jcabi-github>
 
         <!-- WildFly Swarm -->
-        <version.wildfly.swarm>2017.5.0</version.wildfly.swarm>
+        <version.wildfly.swarm>2017.6.0</version.wildfly.swarm>
 
         <!-- maven-compiler-plugin -->
         <maven.compiler.target>1.8</maven.compiler.target>
